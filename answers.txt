@@ -1,0 +1,19 @@
+/*****
+  The following piece of code allows us to patch a user (name, email, age) in an ExpressJS environment.
+  Question 1 - Rewrite it using TypeScript 2.8
+  Question 2 - Why use mongoose's method User.save() instead of User.update()?
+  Question 3 - Remove all promises and use async/await instead.
+  Question 4 - How would you store the geolocation of a user?
+  Question 5 - A song or an artist you would like us to discover?
+******/
+
+* Question 1 & 3 => View code
+
+* Question 2:
+  - On save(), Mongoose internally diffs the document and only sends the fields that have actually changed. 
+  - By default, Validation (on Schema) is not run on update() but save().
+  - Middleware (pre and post hooks) is supported for save() function. Useful for writing plugins.
+
+* Question 5:
+  https://www.youtube.com/watch?v=0wvCIceRZDs&t=3s
+
