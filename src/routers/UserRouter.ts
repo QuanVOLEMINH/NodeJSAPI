@@ -41,7 +41,7 @@ export class UserRouter {
 
     public async patchUser(req: Request, res: Response, next: NextFunction) {
         try {
-
+            
             let user: any = await User.findById(req.params.userId);
 
             if (!user) {
@@ -61,7 +61,6 @@ export class UserRouter {
                 }
 
                 await user.save();
-                // await user.update();
                 return res.status(204).send();
             }
         }

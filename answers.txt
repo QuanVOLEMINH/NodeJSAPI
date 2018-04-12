@@ -14,6 +14,11 @@
   - By default, Validation (on Schema) is not run on update() but save().
   - Middleware (pre and post hooks) is supported for save() function. Useful for writing plugins.
 
+* Question 4:
+  - We could get client IP address by req.connection.remoteAddress.
+  - Then by using an external API, for example 'http://ip-api.com/json/ipaddress', we could get location, also coordinates (longtitude, latitude) by IP address.
+  - We could store in MongoDB under an array { 'loc': [ longtitude, latitude ]} or an embedded document { 'loc': { longtitude: x, latitude:y }}.
+
 * Question 5:
   https://www.youtube.com/watch?v=0wvCIceRZDs&t=3s
 
