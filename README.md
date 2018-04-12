@@ -1,5 +1,9 @@
+<h1>NodeJSAPI</h1>
+
 A NodeJS API using Express, Typescript, MongoDB
 
-* How to run:
-    - yarn install
-    - yarn server
+<h3>How to run:</h3>
+    <ol>
+    <li>yarn install</li>
+    <li>yarn server</li>
+    </ol>
