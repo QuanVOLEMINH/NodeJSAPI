@@ -5,5 +5,5 @@ let UserSchema: Schema = new Schema({
     email: { type: String },
     age: { type: Number }
 });
-const userModel = model('User', UserSchema);
-export default userModel;
+const userSchema = model('User', UserSchema);
+export default userSchema;

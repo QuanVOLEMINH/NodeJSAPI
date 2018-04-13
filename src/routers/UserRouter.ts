@@ -1,6 +1,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import * as fetch from 'node-fetch';
 import User from '../models/User';
+import { IUserModel } from '../interfaces/IUserModel';
 
 
 export class UserRouter {
@@ -42,7 +43,7 @@ export class UserRouter {
     public async patchUser(req: Request, res: Response, next: NextFunction) {
         try {
             
-            let user: any = await User.findById(req.params.userId);
+            let user: IUserModel = await User.findById(req.params.userId);
 
             if (!user) {
                 return res.status(404).send();
