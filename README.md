@@ -2,8 +2,17 @@
 
 A NodeJS API using Express, Typescript, MongoDB
 
-<h3>How to run:</h3>
-    <ol>
-    <li>yarn install</li>
-    <li>yarn server</li>
-    </ol>
+Test using Mocha, Chai with Typescript
+
+<h3>Install Dependencies</h3>
+
+yarn install
+
+<h3> Run Server </h3>
+
+yarn server
+
+<h3> Run Test </h3>    
+
+yarn test
+
