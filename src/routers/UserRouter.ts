@@ -81,7 +81,7 @@ export class UserRouter {
 
     public routes(): void {
         this.router.get('/', this.all);
-        // this.router.get('/:userId', this.one);
+        this.router.get('/:userId', this.one);
         // this.router.post('/', this.addUser);
         this.router.patch('/:userId', this.patchUser);
     }
